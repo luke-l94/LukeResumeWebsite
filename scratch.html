@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luke’s Scratch Page</title>
+  <link rel="stylesheet" href="css/scratch.css" />
+</head>
+<body>
+
+  <!-- Header with Inline Image -->
+<!-- scratch.html -->
+<header class="page-header">
+    <img
+      src="assets/img/new forest.jpg"
+      alt="Forest Landscape"
+      class="header-img"
+    />
+    <h1>My Scratch Page</h1>
+    <p></p>
+  </header>  
+  
+
+  <!-- Nav Below Header -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="webapp.html">Web App</a> |
+    <a href="#top">Back to Top</a>
+  </nav>
+
+  <!-- Anchor Target -->
+  <div id="top"></div>
+
+  <!-- Favorite Shoes (nested lists) -->
+  <section>
+    <h2>Favorite Shoes</h2>
+    <ul>
+      <li>Running Shoes
+        <ol>
+          <li>Vaporfly</li>
+          <li>Pegasus Plus</li>
+          <li>Adidas SL Evo</li>
+        </ol>
+      </li>
+      <li>Casual Shoes
+        <ol>
+          <li>Birkenstock Nagoya</li>
+          <li>Yeezy Slide</li>
+          <li>Birkenstock Boston</li>
+        </ol>
+      </li>
+      <li>Fashion Shoes
+        <ol>
+          <li>Jordan 1 Low</li>
+          <li>Jordan 1 High</li>
+          <li>Jordan 4</li>
+        </ol>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- YouTube Embed -->
+  <section>
+    <h2>Video Demo</h2>
+    <iframe
+      width="100%"
+      height="400"
+      src="https://www.youtube.com/embed/cyx_GBQMUqg"
+      title="Shoe Review Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Tableau Embed -->
+  <section>
+    <h2>Interactive Tableau Viz</h2>
+    <div class="tableauPlaceholder" id="viz123" style="position: relative;">
+      <noscript>
+        <a href="#"><img alt="Viz" src="https://public.tableau.com/static/images/Al/AllTimeFastest200Metres/Dashboardv2/1_rss.png" /></a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="name" value="AllTimeFastest200Metres/Dashboardv2" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/Al/AllTimeFastest200Metres/Dashboardv2/1.png" />
+      </object>
+    </div>
+    <script>
+      var divElement = document.getElementById('viz123');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = '600px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+  <!-- Play Web Game Button -->
+  <section class="button-section">
+    <h2>Ready to Play?</h2>
+    <button class="launch-btn" onclick="window.location.href='webapp.html'">
+      ▶️ Play Web Game
+    </button>
+  </section>
+  <!-- Back to Top -->
+  <p><a href="#top">Return to Top</a></p>
+
+
+</body>
+</html>
